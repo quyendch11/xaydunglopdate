@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class myDate {
+        day;
+        month;
+        year;
+        constructor(d,m,y) {
+            this.day = d;
+            this.month = m ;
+            this.year = y ;
+        }
+        getday(){
+            return this.day;
+        }
+        getmonth () {
+            return this.month;
+        }
+        getyear() {
+            return this.year;
+        }
+        getdate() {
+            return this.day + "/" + this.month + "/" + this.year;
+        }
+    }
+    let mydate2 = new myDate(3,3,2022);
+    alert (mydate2.getdate());
+</script>
+</body>
+</html>
